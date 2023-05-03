@@ -26,10 +26,9 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: comicrelief/docker-node-sls-2
-        flavor: |
-          latest=auto
         tags: |
           type=semver,pattern={{version}}
+          type=raw,value=latest
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
