@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:16
 
 # AWS CLI needs the PYTHONIOENCODING environment variable to handle UTF-8 correctly:
 ENV PYTHONIOENCODING=UTF-8
